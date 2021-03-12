@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 300vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.one{
+    height: 100vh;
+    background-image: url(https://i.picsum.photos/id/1033/2048/1365.jpg?hmac=zEuPfX7t6U866nzXjWF41bf-uxkKOnf1dDrHXmhcK-Q);
+    clip-path: polygon(100% 0, 100% 52%, 31% 71%, 0 55%, 0 0);
+    color: white;
+}
+.one h1{
+    font-size: 60px;
+    position: absolute;
+    top: 28%;
+    left: 10%;
+}
+.one p{
+    position: relative;
+    top: 28%;
+    left: 10%;
+    font-size: 30px;
+    width: 1000px;
+    justify-content: center;
+}
+.one nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+nav ul{
+    display: inline-flex;
+    padding: 40px;
+}
+nav .logo{
+    padding: 0 100px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+nav ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+.two{
+    height: 100vh;
+    padding: 0 20%;
+}
+
+.two h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.tri{
+    height: 100vh;
+    background-color: #574b90;
+    color: white;
+}
+.footer{
+    height: 100vh;
+    background-color: #303a52;
+    color: white;
+}
+
+/* mobiles */
+
+ @media (min-width:319px) and (max-width:768px){
+    nav .logo{
+        padding: 0 10px;
+        font-size: 10px;
+    }
+    nav ul{
+        padding: 20px 5px;
+    }
+    nav ul li{
+        padding: 0 5px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .one{
+        clip-path: polygon(100% 0, 200% 52%, 31% 71%, 0 65%, 0 0);
+    }
+    .one h1{
+        font-size: 30px;
+    }
+    .one p{
+        font-size: 20px;
+        width: 600px;
+    }
+
+}
+
+/* ipad, ipad pro */
+
+@media (min-width:767px) and (max-width:1025px){
+    .one h1{
+        font-size: 40px;
+    }
+    .one p{
+        font-size: 25px;
+        width: 800px;
+        
+    }
+    .one{
+        clip-path: polygon(100% 0, 200% 52%, 31% 71%, 0 65%, 0 0);
+    }
+    nav .logo{
+        padding: 0 20px;
+        font-size: 20px;
+    }
+    nav ul{
+        padding: 20px;
+    }
+    nav ul li{
+        padding: 0 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+} 
